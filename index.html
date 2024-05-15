@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scrollytelling</title>
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <!-- Import GSAP and ScrollTrigger plugin -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <!-- Import styles -->
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <!-- Import scripts -->
+        <script src="assets/scripts/section_1.js" defer></script>
+        <script src="assets/scripts/section-4.js" defer></script>
+        <script src="assets/scripts/section-5.js" defer></script>
+        <script src="assets/scripts/navigation_btns.js" defer></script>
+    </head>
+    <body>
+        <div class="scrollNavigation">
+            <button id="scroll-up-btn" title="Scroll up">⯅</button>
+            <button id="scroll-down-btn" title="Scroll down">⯆</button>
+        </div>
+        <section id="section-1-2" class="section-1-2">
+            <div class="section-1-2__surface">
+                <img
+                    loading="lazy"
+                    src="assets/svgs/environment/Sun.svg"
+                    alt="Image of sun"
+                    id="sun"
+                />
+                <p class="section-1-2__text">
+                    Every day around 8 million pieces of plastic makes their way
+                    into our oceans.
+                </p>
+                <img
+                    loading="lazy"
+                    src="assets/svgs/environment/FishingBoat.svg"
+                    alt="Image of fishing boat"
+                    id="boat"
+                />
+            </div>
+            <div class="section-1-2__ocean">
+                <img
+                    loading="lazy"
+                    src="assets/svgs/trash/largeBottle.svg"
+                    alt="Image of large bottle"
+                    id="largeBottle"
+                />
+                <img
+                    loading="lazy"
+                    src="assets/svgs/trash/Microplastic.svg"
+                    alt="Image of microplastic"
+                    id="microPlastic"
+                />
+                <img
+                    loading="lazy"
+                    src="assets/svgs/trash/PlasticBag.svg"
+                    alt="Image of plastic bag"
+                    id="plasticBag"
+                />
+                <img loading="lazy" src="assets/svgs/trash/" alt="" id="" />
+                <img
+                    loading="lazy"
+                    src="assets/svgs/trash/PlasticCup.svg"
+                    alt="Image of plastic cup"
+                    id="plasticCup"
+                />
+                <img
+                    loading="lazy"
+                    src="assets/svgs/trash/plasticPiece.svg"
+                    alt="Image of plastic piece"
+                    id="plasticPiece"
+                />
+                <img
+                    loading="lazy"
+                    src="assets/svgs/trash/plasticRings.svg"
+                    alt="Image of plastic rings"
+                    id="plasticRings"
+                />
+                <img
+                    loading="lazy"
+                    src="assets/svgs/trash/Sandal.svg"
+                    alt="Image of sandal"
+                    id="sandal"
+                />
+                <img
+                    loading="lazy"
+                    src="assets/svgs/trash/Tire.svg"
+                    alt="Image of tire"
+                    id="tire"
+                />
+            </div>
+        </section>
+        <div class="container">
+            <section class="section-3">
+                <div class="svg-container">
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/PlasticCup.svg"
+                        alt="Plastic Cup"
+                    />
+                    <img
+                        id="floating-2"
+                        src="assets/svgs/trash/plasticRings.svg"
+                        alt="Plastic Rings"
+                    />
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/largeBottle.svg"
+                        alt="Large Bottle"
+                    />
+                    <img
+                        id="floating-2"
+                        src="assets/svgs/trash/Tire.svg"
+                        alt="Tire"
+                    />
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/PlasticBag.svg"
+                        alt="Plastic Bag"
+                    />
+                </div>
+
+                <div class="microplastic" id="floating-3">
+                    <img src="assets/svgs/trash/Microplastic.svg" />
+                </div>
+
+                <div class="svg-container-2">
+                    <img
+                        id="floating"
+                        src="assets/svgs/trash/PlasticBag.svg"
+                        alt="Plastic Bag"
+                    />
+                    <img
+                        id="floating-2"
+                        src="assets/svgs/trash/largeBottle.svg"
+                        alt="Large Bottle"
+                    />
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/Tire.svg"
+                        alt="Tire"
+                    />
+                    <img
+                        id="floating-2"
+                        src="assets/svgs/trash/Sandal.svg"
+                        alt="Sandal"
+                    />
+                    <img
+                        id="floating"
+                        src="assets/svgs/trash/largeBottle.svg"
+                        alt="Large Bottle"
+                    />
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/PlasticBag.svg"
+                        alt="Plastic Bag"
+                    />
+                    <img
+                        id="floating"
+                        src="assets/svgs/trash/PlasticCup.svg"
+                        alt="Plastic Cup"
+                    />
+                </div>
+                <div id="fact-3">
+                    <p>
+                        12 million metric tons of plastic ends up in the ocean
+                        each year. That’s the equivalent of more than 100,000
+                        blue whales. By 2050, ocean plastic will outweigh all of
+                        the ocean’s fish.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section-4">
+                <div class="svg-container">
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/PlasticCup.svg"
+                        alt="Plastic Cup"
+                    />
+                    <img
+                        id="floating-2"
+                        src="assets/svgs/trash/plasticRings.svg"
+                        alt="Plastic Rings"
+                    />
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/largeBottle.svg"
+                        alt="Large Bottle"
+                    />
+                    <img
+                        id="floating-2"
+                        src="assets/svgs/trash/Tire.svg"
+                        alt="Tire"
+                    />
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/PlasticBag.svg"
+                        alt="Plastic Bag"
+                    />
+                </div>
+
+                <div class="microplastic" id="floating-3">
+                    <img src="assets/svgs/trash/Microplastic.svg" />
+                </div>
+
+                <div class="fish">
+                    <img src="assets/svgs/fishing/Fish.svg" />
+                </div>
+
+                <div class="svg-container-2">
+                    <img
+                        id="floating"
+                        src="assets/svgs/trash/PlasticBag.svg"
+                        alt="Plastic Bag"
+                    />
+                    <img
+                        id="floating-2"
+                        src="assets/svgs/trash/largeBottle.svg"
+                        alt="Large Bottle"
+                    />
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/Tire.svg"
+                        alt="Tire"
+                    />
+                    <img
+                        id="floating-2"
+                        src="assets/svgs/trash/Sandal.svg"
+                        alt="Sandal"
+                    />
+                    <img
+                        id="floating"
+                        src="assets/svgs/trash/largeBottle.svg"
+                        alt="Large Bottle"
+                    />
+                    <img
+                        id="floating-3"
+                        src="assets/svgs/trash/PlasticBag.svg"
+                        alt="Plastic Bag"
+                    />
+                    <img
+                        id="floating"
+                        src="assets/svgs/trash/PlasticCup.svg"
+                        alt="Plastic Cup"
+                    />
+                </div>
+                <div id="fact-4">
+                    <p>
+                        Ocean plastic can be broken into smaller pieces — known
+                        as microplastics that go into our food chain. When it
+                        eventually degrades the process releases chemicals that
+                        further contaminate the sea.
+                    </p>
+                </div>
+            </section>
+            <section class="section" id="section-5">
+                <div class="hookFish">
+                    <img
+                        loading="lazy"
+                        src="assets/svgs/fishing/fishhook&worm.svg"
+                        alt="Fishing hook"
+                        class="hookFish__fishHookWorm animateHookedFish"
+                    />
+                    <img
+                        loading="lazy"
+                        src="assets/svgs/fishing/Fish.svg"
+                        alt="Fish"
+                        class="hookFish__fish2 animateHookedFish"
+                    />
+                </div>
+                <p class="section__text5">
+                    1 in 3 fish caught for human consumption now contains
+                    plastic.
+                </p>
+            </section>
+            <section class="section" id="section-6">
+                <img
+                    loading="lazy"
+                    src="assets/svgs/fishing/cookedFish.svg"
+                    alt="Cooked fish"
+                    class="section__cookedFish"
+                />
+                <div class="dinner">
+                    <img
+                        loading="lazy"
+                        src="assets/svgs/kitchen/Fork.svg"
+                        alt="Fork"
+                        class="dinner__fork"
+                    />
+                    <img
+                        loading="lazy"
+                        src="assets/svgs/kitchen/Plate.svg"
+                        alt="Dinner plate"
+                        class="dinner__dinnerPlate"
+                    />
+                    <img
+                        loading="lazy"
+                        src="assets/svgs/kitchen/Knife.svg"
+                        alt="Knife"
+                        class="dinner__knife"
+                    />
+                </div>
+                <p class="section__text6">
+                    Humans constantly inhale and ingest microplastic through
+                    contaminated seafood, including fish and shellfish.
+                    Additionally, microplastics have been found in tap water,
+                    bottled water, and even commonly consumed beverages, such as
+                    beer and salt.
+                </p>
+            </section>
+            <section class="section" id="section-7">
+                <div class="section__textblock">
+                    <h1>What can you do?</h1>
+                    <ul>
+                        <li>Reduce Your Use of Single-Use Plastics</li>
+                        <li>Buy less plastic and bring a reusable bag</li>
+                        <li>
+                            Recycling helps keep plastics out of the ocean and
+                            reduces the amount of “new” plastic in circulation
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" id="section-8">
+                <div class="section__textblock">
+                    <h1 class="section__text7">Sources:</h1>
+                    <a
+                        class="section__text7"
+                        href="https://fonts.google.com/specimen/Bubblegum+Sans"
+                        target="_blank"
+                        >Google Fonts - Bubblegum Sans</a
+                    >
+                    <a
+                        class="section__text7"
+                        href="https://gsap.com/"
+                        target="_blank"
+                    >
+                        GSAP
+                    </a>
+                    <a
+                        class="section__text7"
+                        href="https://gsap.com/docs/v3/Plugins/ScrollTrigger/"
+                        target="_blank"
+                        >GSAP ScrollTrigger plugin</a
+                    >
+                    <a
+                        class="section__text7"
+                        href="https://www.condorferries.co.uk/plastic-in-the-ocean-statistics "
+                        target="_blank"
+                    >
+                        Plastic in the Ocean Statistics 2023
+                    </a>
+                    <a
+                        class="section__text7"
+                        href="https://www.conservation.org/stories/ocean-pollution-facts "
+                        target="_blank"
+                        >Ocean pollution facts
+                    </a>
+                    <a
+                        class="section__text7"
+                        href="https://www.sas.org.uk/plastic-pollution/plastic-pollution-facts-figures/ "
+                        target="_blank"
+                        >Plastic pollution: facts & figures
+                    </a>
+                    <a
+                        class="section__text7"
+                        href="https://www.undp.org/kosovo/blog/microplastics-human-health-how-much-do-they-harm-us#:~:text=June%205%2C%202023&text=Recent%20evidence%20indicates%20that%20humans,such%20as%20beer%20and%20salt"
+                        target="_blank"
+                        >Microplastics on Human Health: How much do they harm
+                        us?
+                    </a>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
