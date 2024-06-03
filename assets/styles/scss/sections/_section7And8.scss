@@ -1,0 +1,16 @@
+@use "../utilities/variables" as *;
+
+.section {
+    // Section 7 and 8 elements
+    &__textblock {
+        width: 1000px;
+        margin-inline: auto;
+        padding-block: 2rem;
+        h1 {
+        margin-bottom: 1rem;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

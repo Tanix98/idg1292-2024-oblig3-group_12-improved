@@ -1,0 +1,51 @@
+@use "../utilities/variables" as *;
+
+.section {
+    // Section 5 elements
+    &#section-5 {
+        justify-content: center;
+        text-align: center;
+    }
+    &__text5 {
+        align-self: flex-end;
+        margin-bottom: 40px;
+    }
+}
+
+// Section 5 elements
+.hookFish {
+    &__fish2 {
+      z-index: 2;
+      width: 18rem;
+      height: 10rem;
+      top: 12.2rem;
+      left: 6.8rem;
+    }
+    &__fishHookWorm {
+      width: 3.5rem;
+      height: 19.4rem;
+      left: 5rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    html {
+      font-size: 20px;
+    }
+    // Section 5 elements
+    .hookFish {
+      position: absolute;
+      left: 30%;
+      transform: translate(-30%);
+      &__fish2,
+      &__fishHookWorm {
+        transform: none;
+      }
+      &__fish2 {
+        left: 34px;
+      }
+      &__fishHookWorm {
+        left: 0;
+      }
+    }
+}

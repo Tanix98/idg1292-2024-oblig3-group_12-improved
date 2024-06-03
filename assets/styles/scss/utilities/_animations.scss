@@ -1,3 +1,4 @@
+// Section 1 and 2
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -5,4 +6,27 @@
     to {
       opacity: 1;
     }
+}
+
+// Section 4
+@keyframes swim {
+  from {
+    right: -150%;
   }
+  to {
+    right: 100%;
+  }
+  }
+
+@media (prefers-reduced-motion: reduced) {
+  // Section 3 and 4
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+}

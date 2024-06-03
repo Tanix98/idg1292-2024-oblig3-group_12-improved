@@ -1,5 +1,10 @@
 @use "../utilities/variables" as *;
 
+* {
+  // apply font-family to all elements
+  font-family: "BubblegumSans";
+}
+
 @font-face {
   font-family: "BubblegumSans";
   src: local("Bubblegum Sans"), local("BubblegumSans-Regular"),

@@ -1,0 +1,80 @@
+@use "../utilities/variables" as *;
+
+.section-1-2 {
+    width: 100vw;
+    height: 100vh;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+    &__text {
+      font-size: 1.5em;
+      padding-inline: 1rem;
+      max-width: 1200px;
+      animation: fadeIn 1.5s ease-in-out forwards;
+      opacity: 0; // Start with text hidden
+    }
+
+    &__surface {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+  
+      padding-top: 7rem;
+      height: 60%;
+      background-color: $sky;
+      position: relative;
+      overflow: hidden;
+      width: 100vw;
+  
+      #sun {
+        border-radius: 50%;
+        top: -2rem;
+        left: -2rem;
+        width: 8em;
+        position: absolute;
+        box-shadow: "0 0 20px 10px rgba(25, 203, 68, 0.8)";
+      }
+      #boat {
+        width: 15rem;
+        margin: -0.5rem;
+      }
+      &p {
+        font-size: 2rem;
+        padding-inline: 1rem;
+        padding-top: 20rem;
+        text-align: center;
+      }
+    }
+  
+    &__ocean {
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10rem;
+      align-self: center;
+      flex-wrap: wrap;
+      width: 10rem;
+      transform: translate(-9rem);
+  
+      img {
+        width: 1.5rem;
+      }
+    }
+}
+
+@media (min-width: 768px) {
+    .section-1-2 {
+      #boat {
+        width: 20rem; // Increase boat size on desktop
+      }
+      .section-1-2__text {
+        font-size: 2rem;
+      }
+      img {
+        width: 2rem;
+      }
+    }
+}

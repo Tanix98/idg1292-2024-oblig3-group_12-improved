@@ -1,0 +1,90 @@
+@use "../utilities/variables" as *;
+
+.section {
+  // Section 6 elements
+  &#section-6 {
+    background-color: $wood;
+  }
+  &#section-5,
+  &#section-6 {
+    img {
+      position: absolute;
+    }
+  }
+  &#section-6 {
+      background-color: $wood;
+  }
+  &__cookedFish {
+      z-index: 2;
+      width: 10.5rem;
+      height: 4.5rem;
+      top: 7.5rem;
+      left: 50%;
+      transform: translate(-50%);
+  }
+  &__text6 {
+      max-height: 382px;
+  }
+  &__text6 {
+      position: absolute;
+      width: 100vw;
+      bottom: 4%;
+      left: 50%;
+      transform: translate(-50%);
+  }
+}
+
+// Section 6 elements
+.dinner {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  img {
+    position: static !important;
+  }
+  &__dinnerPlate {
+    width: 15rem;
+    height: 15rem;
+  }
+  &__fork,
+  &__knife {
+    width: 4rem;
+    height: 12rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  // Section 6 elements
+  .section {
+    &__cookedFish {
+      width: 14rem;
+      height: 6rem;
+      top: 9.5rem;
+    }
+  }
+  .dinner {
+    &__dinnerPlate {
+      width: 20rem;
+      height: 20rem;
+    }
+    &__fork,
+    &__knife {
+      width: 4.5rem;
+      height: 16rem;
+    }
+  }
+}
+
+@media screen and (min-width: 870px) {
+  .section {
+    &__cookedFish {
+      top: 11.5rem;
+    }
+  }
+  .dinner {
+    top: 4rem;
+  }
+}

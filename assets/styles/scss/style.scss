@@ -3,3 +3,9 @@
 
 @use "base/base";
 @use "base/typography";
+
+@use "sections/section1and2";
+@use "sections/section3and4";
+@use "sections/section5";
+@use "sections/section6";
+@use "sections/_section7And8.scss";
