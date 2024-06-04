@@ -1,16 +1,10 @@
 @use "../utilities/variables" as *;
 
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
 * {
   // apply font-family to all elements
-  font-family: "BubblegumSans";
-}
-
-@font-face {
-  font-family: "BubblegumSans";
-  src: local("Bubblegum Sans"), local("BubblegumSans-Regular"),
-    url("./assets/fonts/BubblegumSans-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
+  font-family: "Bubblegum Sans", sans-serif;
 }
 
 h1, p, a, ul {

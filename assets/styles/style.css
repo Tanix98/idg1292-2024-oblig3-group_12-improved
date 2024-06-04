@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -61,15 +62,9 @@ body {
   }
 }
 * {
-  font-family: "BubblegumSans";
+  font-family: "Bubblegum Sans", sans-serif;
 }
 
-@font-face {
-  font-family: "BubblegumSans";
-  src: local("Bubblegum Sans"), local("BubblegumSans-Regular"), url("./assets/fonts/BubblegumSans-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
 h1, p, a, ul {
   color: white;
   padding-inline: 1rem;
