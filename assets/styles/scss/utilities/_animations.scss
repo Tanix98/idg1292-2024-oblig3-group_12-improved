@@ -18,7 +18,8 @@
   }
   }
 
-@media (prefers-reduced-motion: reduced) {
+// Only runs if user has NOT enabled any reduced animation settings
+@media (prefers-reduced-motion: no-preference) {
   // Section 3 and 4
   @keyframes float {
     0%,

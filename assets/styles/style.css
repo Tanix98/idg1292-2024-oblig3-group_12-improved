@@ -15,7 +15,7 @@
     right: 100%;
   }
 }
-@media (prefers-reduced-motion: reduced) {
+@media (prefers-reduced-motion: no-preference) {
   @keyframes float {
     0%, 100% {
       transform: translateY(0);
@@ -122,6 +122,27 @@ li {
   width: 8em;
   position: absolute;
   box-shadow: "0 0 20px 10px rgba(25, 203, 68, 0.8)";
+}
+.section-1-2__surface #cloud1 {
+  top: 3rem;
+  left: 35em;
+  width: 10em;
+  position: absolute;
+}
+.section-1-2__surface #cloud2 {
+  top: 1rem;
+  left: 60rem;
+  width: 6em;
+  position: absolute;
+}
+.section-1-2__surface #cloud3 {
+  top: 2.5rem;
+  left: 2rem;
+  width: 10em;
+  position: absolute;
+}
+.section-1-2__surface #sun {
+  box-shadow: 0 0 4rem 2rem #FFCB44;
 }
 .section-1-2__surface #boat {
   width: 15rem;

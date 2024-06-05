@@ -27,7 +27,6 @@
       position: relative;
       overflow: hidden;
       width: 100vw;
-  
       #sun {
         border-radius: 50%;
         top: -2rem;
@@ -35,6 +34,27 @@
         width: 8em;
         position: absolute;
         box-shadow: "0 0 20px 10px rgba(25, 203, 68, 0.8)";
+      }
+      #cloud1 {
+        top: 3rem;
+        left: 35em;
+        width: 10em;
+        position: absolute;
+      }
+      #cloud2 {
+        top: 1rem;
+        left: 60rem;
+        width: 6em;
+        position: absolute;
+      }
+      #cloud3 {
+        top: 2.5rem;
+        left: 2rem;
+        width: 10em;
+        position: absolute;
+      }
+      #sun {
+        box-shadow: 0 0 4rem 2rem $sun;
       }
       #boat {
         width: 15rem;

@@ -1,24 +1,38 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function initScrollAnimations() {
-    // Create a floating effect for the boat
-    gsap.to('#boat', {
-        y: '+=5', // Simulate floating by moving up and down
-        repeat: -1,
-        yoyo: true,
-        duration: 2,
-        ease: 'sine.inOut',
+    let mm = gsap.matchMedia();
+    // Only runs if user has NOT enabled any reduced animation settings
+    mm.add('(prefers-reduced-motion: no-preference)', () => {
+        // Create a floating effect for the boat
+        gsap.to('#boat', {
+            y: '+=5', // Simulate floating by moving up and down
+            repeat: -1,
+            yoyo: true,
+            duration: 2,
+            ease: 'sine.inOut',
+        });
+        // Clouds animation
+        gsap.to('#cloud1', { x: 2000, duration: 200 });
+        gsap.to('#cloud2', { x: 2000, duration: 600 });
+        gsap.to('#cloud3', { x: 2000, duration: 300 });
+        // Sunshine animation
+        gsap.to('#sun', {
+            boxShadow: '0 0 4rem 0.5rem rgba(255, 203, 68, 1)',
+            repeat: -1,
+            yoyo: true,
+            duration: 4,
+        });
     });
 
     // Implement text animations and trash falling effect
     const mainTimeline = gsap.timeline({
         scrollTrigger: {
-            trigger: '#section-1-2',
+            trigger: '.section-1-2',
             start: 'top top',
             end: '200% bottom',
             scrub: true,
             pin: true,
-            // markers: true,
         },
     });
 
